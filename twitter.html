@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter mock</title>
+    <link rel="Icon" href="/Twitter/Icon/sidebar/twitter.svg">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+
+            background-color: black
+        }
+
+        .side-bar {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        .side-bar-container {
+            width: 250px;
+            padding: 12px;
+            height: 100%;
+
+        }
+
+        .content {
+            flex: 1;
+            background-color: green;
+        }
+
+        .search-bar {
+            flex: 1;
+            background-color: yellow;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            height: 58px;
+            width: 100%;
+            padding: 4px 0;
+            margin-top: 4px;
+
+        }
+
+        .nav-menu>.menu-group>span {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .menu-group {
+            display: flex;
+            align-items: center;
+
+            padding: 12px;
+        }
+
+        .menu-group:hover {
+            background-color: #1B1D21;
+            padding: 12px;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        .twitter {
+            height: 50px;
+            width: 225px;
+            background-color: #219bf0;
+            color: white;
+            border-radius: 20px;
+            margin: 10px;
+            border: none;
+            font-size: large;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="side-bar">
+        <div class="side-bar-container">
+            <div class="nav-menu">
+                <img src="/Twitter/Icon/sidebar/twitter.svg">
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/home.svg">
+                    <span>Home</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/explore.svg">
+                    <span>Explore</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/notifications.svg">
+                    <span>Notifications</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/messages.svg">
+                    <span>Messages</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/bookmarks.svg">
+                    <span>Bookmarks</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/lists.svg">
+                    <span>Lists</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/profile.svg">
+                    <span>Profile</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="menu-group">
+                    <img src="/Twitter/Icon/sidebar/more.svg">
+                    <span>More</span>
+                </div>
+            </div>
+            <div><button class="twitter">
+                    Tweet
+                </button></div>
+        </div>
+
+    </div>
+    <div class="content"></div>
+    <div class="search-bar"></div>
+
+
+</body>
+
+</html>
